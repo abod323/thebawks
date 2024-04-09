@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+<onload>RunScript(script.hello.world)</onload>
+<backgroundcolor>brown</backgroundcolor>
+     <controls>
+			<include>DefaultBackground</include>
+
+    </controls>
+</window>

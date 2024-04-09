@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id=1151>
+	<defaultcontrol>9000</defaultcontrol>
+	<backgroundcolor>background</backgroundcolor>
+	<controls>
+				<include>ColoredBackgroundImages2</include>
+				<include>tv_movies</include>
+
+	</controls>
+</window>
