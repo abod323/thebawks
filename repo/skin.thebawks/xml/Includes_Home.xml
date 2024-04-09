@@ -42,7 +42,7 @@
 	
     <texturefocus colordiffuse="FFFFFF00">special://skin/extras/backgrounds/tv_icon.png</texturefocus>
     <texturenofocus colordiffuse="">special://skin/extras/backgrounds/tv_icon.png</texturenofocus>
-    <onclick>RunScript(script.hello.world)</onclick>
+    <onclick>RunScript(script.thebawks)</onclick>
 	  <onfocus>SetProperty(clicked_button_id, 20005)</onfocus>
 	
    </control>
@@ -59,7 +59,7 @@
 
 		<texturefocus colordiffuse="FFFFFF00">special://skin/extras/backgrounds/hubs_icon.png</texturefocus>
 		<texturenofocus colordiffuse="">special://skin/extras/backgrounds/hubs_icon.png</texturenofocus>
-		<onclick>RunScript(script.hello.world)</onclick>
+		<onclick>RunScript(script.thebawks)</onclick>
 		<onfocus>SetProperty(clicked_button_id, 20006)</onfocus>
 	</control>
 	
@@ -76,7 +76,7 @@
 
 		<texturefocus colordiffuse="FFFFFF00">special://skin/extras/backgrounds/movie_icon.png</texturefocus>
 		<texturenofocus colordiffuse="">special://skin/extras/backgrounds/movie_icon.png</texturenofocus>
-		<onclick>RunScript(script.hello.world)</onclick>
+		<onclick>RunScript(script.thebawks)</onclick>
 		<onfocus>SetProperty(clicked_button_id, 20007)</onfocus>
 	</control>
 
@@ -106,7 +106,7 @@
     <texturefocus colordiffuse="">special://skin/extras/backgrounds/tv_btn.png</texturefocus>
     <texturenofocus colordiffuse="">special://skin/extras/backgrounds/tv_btn.png</texturenofocus>
 
-    <onclick>RunScript(script.hello.world)</onclick>
+    <onclick>RunScript(script.thebawks)</onclick>
 	  <onfocus>SetProperty(clicked_button_id, 20001)</onfocus>
 	
   
@@ -124,7 +124,7 @@
 	
     <texturefocus colordiffuse="">special://skin/extras/backgrounds/games_btn.png</texturefocus>
     <texturenofocus colordiffuse="">special://skin/extras/backgrounds/games_btn.png</texturenofocus>
-    <onclick>RunScript(script.hello.world)</onclick>
+    <onclick>RunScript(script.thebawks)</onclick>
   <onfocus>SetProperty(clicked_button_id, 20002)</onfocus>
 	
   
@@ -143,7 +143,7 @@
 
 	<texturefocus colordiffuse="">special://skin/extras/backgrounds/multi_btn.png</texturefocus>
 	<texturenofocus colordiffuse="">special://skin/extras/backgrounds/multi_btn.png</texturenofocus>
-	<onclick>RunScript(script.hello.world)</onclick>
+	<onclick>RunScript(script.thebawks)</onclick>
 	<onfocus>SetProperty(clicked_button_id, 20003)</onfocus>
 </control>
 
@@ -160,7 +160,7 @@
 
 	<texturefocus colordiffuse="">special://skin/extras/backgrounds/web_btn.png</texturefocus>
 	<texturenofocus colordiffuse="">special://skin/extras/backgrounds/web_btn.png</texturenofocus>
-	<onclick>RunScript(script.hello.world)</onclick>
+	<onclick>RunScript(script.thebawks)</onclick>
 	<onfocus>SetProperty(clicked_button_id, 20004)</onfocus>
 </control>
 
@@ -177,7 +177,7 @@
 
 	<texturefocus colordiffuse="">special://skin/extras/backgrounds/home_cubes.png</texturefocus>
 	<texturenofocus colordiffuse="">special://skin/extras/backgrounds/home_cubes.png</texturenofocus>
-	<onclick>RunScript(script.hello.world)</onclick>
+	<onclick>RunScript(script.thebawks)</onclick>
 	<onfocus>SetProperty(clicked_button_id, 20004)</onfocus>
 </control>
 
@@ -203,7 +203,7 @@
 	<width>400</width>
 	<height>130</height>
     <aligny>center</aligny>
-  <onclick>RunScript(script.hello.world)</onclick>
+  <onclick>RunScript(script.thebawks)</onclick>
   
 </control>
        <!-- First Button: Login -->

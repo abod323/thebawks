@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-<onload>RunScript(script.hello.world)</onload>
+<onload>RunScript(script.thebawks)</onload>
 <backgroundcolor>brown</backgroundcolor>
      <controls>
 			<include>DefaultBackground</include>

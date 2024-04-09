@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1152">
-<onload>RunScript(script.hello.world)</onload>
+<onload>RunScript(script.thebawks)</onload>
 <backgroundcolor>brown</backgroundcolor>
      <controls>
 	
@@ -18,7 +18,7 @@
           <viewtype label="3D list">list</viewtype>
           <orientation>vertical</orientation>
           <pagecontrol>25</pagecontrol>
-		  <onclick>RunScript(script.hello.world)</onclick>
+		  <onclick>RunScript(script.thebawks)</onclick>
           <scrolltime tween="sine" easing="out">200</scrolltime>
           <focusposition>4</focusposition>
           <movement>6</movement>
@@ -36,7 +36,7 @@
     <texturefocus colordiffuse="">special://skin/extras/backgrounds/tv_btn.png</texturefocus>
     <texturenofocus colordiffuse="">special://skin/extras/backgrounds/tv_btn.png</texturenofocus>
 
-    <onclick>RunScript(script.hello.world)</onclick>
+    <onclick>RunScript(script.thebawks)</onclick>
 	  <onfocus>SetProperty(clicked_button_id, 20001)</onfocus>
 	
   
@@ -57,7 +57,7 @@
     <texturefocus colordiffuse="">special://skin/extras/backgrounds/tv_btn.png</texturefocus>
     <texturenofocus colordiffuse="">special://skin/extras/backgrounds/tv_btn.png</texturenofocus>
 
-    <onclick>RunScript(script.hello.world)</onclick>
+    <onclick>RunScript(script.thebawks)</onclick>
 	  <onfocus>SetProperty(clicked_button_id, 20001)</onfocus>
 	
   
