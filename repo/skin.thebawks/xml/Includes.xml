@@ -1034,6 +1034,34 @@
 			<texture colordiffuse="secondary_background" fallback="special://skin/extras/backgrounds/pattern1.jpg">$INFO[Skin.String(background_overlay),special://skin/extras/backgrounds/pattern,.jpg]</texture>
 		</control> -->
 	</include>
+		<include name="ColoredBackgroundImages3">
+		<control type="image">
+			<depth>DepthBackground</depth>
+			<include>FullScreenDimensions</include>
+			<aspectratio>scale</aspectratio>
+			<texture colordiffuse="">special://skin/extras/backgrounds/games.png</texture>
+		</control>
+		<!-- <control type="image">
+			<depth>DepthBackground</depth>
+			<include>FullScreenDimensions</include>
+			<aspectratio>scale</aspectratio>
+			<texture colordiffuse="secondary_background" fallback="special://skin/extras/backgrounds/pattern1.jpg">$INFO[Skin.String(background_overlay),special://skin/extras/backgrounds/pattern,.jpg]</texture>
+		</control> -->
+	</include>
+	<include name="ColoredBackgroundImages4">
+		<control type="image">
+			<depth>DepthBackground</depth>
+			<include>FullScreenDimensions</include>
+			<aspectratio>scale</aspectratio>
+			<texture colordiffuse="">special://skin/extras/backgrounds/multi_bg.png</texture>
+		</control>
+		<!-- <control type="image">
+			<depth>DepthBackground</depth>
+			<include>FullScreenDimensions</include>
+			<aspectratio>scale</aspectratio>
+			<texture colordiffuse="secondary_background" fallback="special://skin/extras/backgrounds/pattern1.jpg">$INFO[Skin.String(background_overlay),special://skin/extras/backgrounds/pattern,.jpg]</texture>
+		</control> -->
+	</include>
 	<include name="ColoredBackgroundImages">
 		<control type="image">
 			<depth>DepthBackground</depth>

@@ -1,12 +1,12 @@
 import xbmcgui
 import xbmc
 import math
-
+from urllib.parse import quote
 
 # http request
 import requests
 import json
-base_url='http://192.168.1.105:8000'
+base_url='http://192.168.1.106:8000'
 window = xbmcgui.Window(10000)
 # Function to save the token to addon settings
 def save_token(token):
@@ -66,7 +66,7 @@ def show_custom_dialog():
                     
                     save_token(data['token'])
                     # Show success message
-                    xbmc.executebuiltin('ActivateWindow(10000)')
+                    xbmc.executebuiltin('ReplaceWindow(10000)')
                 else:
                     # Show error message
                     dialog.ok('Error', data['message'])
@@ -125,11 +125,11 @@ def get_mac_and_login():
                 #close dialog
                 dialog.close()
              
-                xbmc.executebuiltin('ActivateWindow(10000)')
+                xbmc.executebuiltin('ReplaceWindow(10000)')
             else:
                 # close dialog
                 dialog.close()
-                xbmc.executebuiltin('ActivateWindow(11150)')
+                xbmc.executebuiltin('ReplaceWindow(11150)')
            
 
             break
@@ -178,8 +178,20 @@ def SlideButton():
         if current_x == 0:
             #    
             # ActivateWindow(videos,plugin://plugin.video.themoviedb.helper?info=mdblist_toplists,return)
-            plugin_url = 'plugin://plugin.video.seren'
-            xbmc.executebuiltin('ActivateWindow(1151)')
+            # 20001
+            if clicked_button_id == 20001:
+                xbmc.executebuiltin('ActivateWindow(1151)')
+            # 20002
+            if clicked_button_id == 20002:
+                xbmc.executebuiltin('ActivateWindow(1153)')
+            # 20003
+            if clicked_button_id == 20003:
+                xbmc.executebuiltin('ActivateWindow(1154)')
+            # 20004
+            if clicked_button_id == 20004:
+                xbmc.executebuiltin('ActivateWindow(1151)')
+
+            
 
 
 
@@ -188,8 +200,25 @@ def SlideButton():
 # # window id
 # dialog.ok('Window ID', '{}'.format(xbmcgui.getCurrentWindowId()))
 # Call the function to slide the button
-if xbmcgui.getCurrentWindowId() == 10000:
+if xbmcgui.getCurrentWindowId() == 10000: 
    SlideButton()
+
+# if window id is 11154
+if xbmcgui.getCurrentWindowId() == 11154:
+    # Get the window
+    window = xbmcgui.Window(xbmcgui.getCurrentWindowId())
+    
+    # Get the clicked button id
+    clicked_button_id = window.getProperty('clicked_button_id')
+    
+    # if clicked button id == 20005 go home
+    if clicked_button_id == '20012':
+        xbmc.executebuiltin('ActivateWindow(10001,plugin://plugin.program.autowidget?group=lkkl-1713009424.9322183&mode=path&path_id=radio-1713016088.482167)')
+
+    if clicked_button_id == '20006':
+        xbmc.executebuiltin('ActivateWindow(10001,plugin://plugin.program.autowidget?group=lkkl-1713009424.9322183&mode=path&path_id=radio-1713016088.482167)')
+
+
 
 
 # if button is clicked 
@@ -205,11 +234,19 @@ if xbmcgui.getCurrentWindowId() == 11151:
         xbmc.executebuiltin('ActivateWindow(videos,plugin://plugin.video.seren?action=showsHome)')
 
     if clicked_button_id == '20006':
-        xbmc.executebuiltin('ActivateWindow(1152)')
+        xbmc.executebuiltin('ActivateWindow(videos,plugin://plugin.video.tb)')
 
     # if clicked button id == 20006 go to movies
     elif clicked_button_id == '20007':
-        xbmc.executebuiltin('ActivateWindow(videos,plugin://plugin.video.seren?action=moviesHome)')
+# Define the value for the {trakt} placeholder
+         trakt_id = 120
+         mediatype = 'movie'
+
+# Construct the URL with the placeholder replaced
+         url = "plugin://plugin.video.seren/?action=getSources&source_select=true&action_args=%7B%22mediatype%22%3A%20%22{mediatype}%22%2C%20%22trakt_id%22%3A%20{trakt_id}%7D".format(
+    mediatype=mediatype,
+    trakt_id=trakt_id)        
+         xbmc.executebuiltin('PlayMedia({})'.format(url))
 
 # def RotateButton():
 #     # Get the window

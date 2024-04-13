@@ -24,6 +24,120 @@
 
 	</definition>
 </include>
+
+<include name='multi_home'>
+ <param name="visible">true</param>
+	
+    <definition>
+ <control type="button" id="20012">
+	
+		<font>font36_title</font>
+		<align>center</align>
+		<left>300</left>
+		<top>25%</top>
+		<width>300</width>
+		<height>300</height>
+		<aligny>center</aligny>
+
+		<texturefocus colordiffuse="FFdea52b">special://skin/extras/backgrounds/music.png</texturefocus>
+		<texturenofocus colordiffuse="">special://skin/extras/backgrounds/music.png</texturenofocus>
+		<onclick>RunScript(script.thebawks)</onclick>
+		<onfocus>SetProperty(clicked_button_id, 20012)</onfocus>
+	
+	</control>
+      
+	<!-- SECOND BUTTON RIGHT -->
+	<control type="button" id="20006">
+	
+		<font>font36_title</font>
+		<align>center</align>
+		<right>45%</right>
+		<top>25%</top>
+		<width>300</width>
+		<height>300</height>
+		<aligny>center</aligny>
+
+		<texturefocus colordiffuse="FFdea52b">special://skin/extras/backgrounds/videos.png</texturefocus>
+		<texturenofocus colordiffuse="">special://skin/extras/backgrounds/videos.png</texturenofocus>
+		<onclick>RunScript(script.thebawks)</onclick>
+
+	</control>
+		<control type="button" id="20006">
+	
+		<font>font36_title</font>
+		<align>center</align>
+		<left>300</left>
+		<top>50%</top>
+		<width>300</width>
+		<height>300</height>
+		<aligny>center</aligny>
+
+		<texturefocus colordiffuse="FFdea52b">special://skin/extras/backgrounds/apps.png</texturefocus>
+		<texturenofocus colordiffuse="">special://skin/extras/backgrounds/apps.png</texturenofocus>
+		<onclick>RunScript(script.thebawks)</onclick>
+	
+	</control>
+		<control type="button" id="20006">
+	
+		<font>font36_title</font>
+		<align>center</align>
+		<right>47%</right>
+		<top>55%</top>
+		<width>250</width>
+		<height>200</height>
+		<aligny>center</aligny>
+
+		<texturefocus colordiffuse="FFdea52b">special://skin/extras/backgrounds/photos.png</texturefocus>
+		<texturenofocus colordiffuse="">special://skin/extras/backgrounds/photos.png</texturenofocus>
+		<onclick>RunScript(script.thebawks)</onclick>
+	</control>
+	
+
+     
+    </definition>
+	</include>
+
+<include name='games_home'>
+ <param name="visible">true</param>
+	
+    <definition>
+ <control type="button" id="20006">
+	
+		<font>font36_title</font>
+		<align>center</align>
+		<left>500</left>
+		<top>25%</top>
+		<width>550</width>
+		<height>250</height>
+		<aligny>center</aligny>
+
+		<texturefocus colordiffuse="FF407637">special://skin/extras/backgrounds/steam_logo.png</texturefocus>
+		<texturenofocus colordiffuse="">special://skin/extras/backgrounds/steam_logo.png</texturenofocus>
+		<onclick>RunScript(script.thebawks)</onclick>
+		<onfocus>SetProperty(clicked_button_id, 20006)</onfocus>
+	</control>
+      
+	<!-- SECOND BUTTON RIGHT -->
+	<control type="button" id="20006">
+	
+		<font>font36_title</font>
+		<align>center</align>
+		<left>500</left>
+		<top>55%</top>
+		<width>550</width>
+		<height>250</height>
+		<aligny>center</aligny>
+
+		<texturefocus colordiffuse="FF407637">special://skin/extras/backgrounds/game_logo.png</texturefocus>
+		<texturenofocus colordiffuse="">special://skin/extras/backgrounds/game_logo.png</texturenofocus>
+		<onclick>RunScript(script.thebawks)</onclick>
+		<onfocus>SetProperty(clicked_button_id, 20006)</onfocus>
+	</control>
+	
+
+     
+    </definition>
+	</include>
 <include name='tv_movies'>
  <param name="visible">true</param>
 	
@@ -177,8 +291,24 @@
 
 	<texturefocus colordiffuse="">special://skin/extras/backgrounds/home_cubes.png</texturefocus>
 	<texturenofocus colordiffuse="">special://skin/extras/backgrounds/home_cubes.png</texturenofocus>
-	<onclick>RunScript(script.thebawks)</onclick>
-	<onfocus>SetProperty(clicked_button_id, 20004)</onfocus>
+
+</control>
+<!-- settings -->
+<control type="button" id="20011">
+
+	<font>font36_title</font>
+	<align>center</align>
+	<right>50</right>
+	<top>90%</top>
+	<width>100</width>
+	<height>100</height>
+	<aligny>center</aligny>
+
+	<texturefocus colordiffuse="FFFFFF00">special://skin/extras/backgrounds/sett.png</texturefocus>
+	<texturenofocus colordiffuse="">special://skin/extras/backgrounds/sett.png</texturenofocus>
+	<onclick>ActivateWindow(settings)</onclick>
+
+
 </control>
 
 

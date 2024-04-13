@@ -4,6 +4,8 @@
 		<import addon="xbmc.python" version="3.0.0"/>
 		<!-- import request -->
 		<import addon="script.module.requests" version="2.3.0"/>
+		<!-- import websocket -->
+		
 	</requires>
 	<extension point="xbmc.python.script" library="addon.py">
 		<provides>executable</provides>
