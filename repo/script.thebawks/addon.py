@@ -6,7 +6,7 @@ from urllib.parse import quote
 # http request
 import requests
 import json
-base_url='http://192.168.1.106:8000'
+base_url='https://thebawks.jahzin.net/public'
 window = xbmcgui.Window(10000)
 # Function to save the token to addon settings
 def save_token(token):
@@ -70,6 +70,7 @@ def show_custom_dialog():
                 else:
                     # Show error message
                     dialog.ok('Error', data['message'])
+
                     
                 break
             else:
@@ -101,6 +102,8 @@ def login_by_mac(mac):
         # Return an error message
         dialog = xbmcgui.Dialog()
         dialog.ok('Error', response.text)
+        # go to login window
+        xbmc.executebuiltin('ReplaceWindow(11150)')
     
 
 # get mac address and login
@@ -120,7 +123,7 @@ def get_mac_and_login():
         if mac_address != 'Busy'and mac_address != None:
             data = login_by_mac(mac_address)
 
-            if data['status'] == True:
+            if data != None and data['status'] == True:
                 save_token(data['token'])
                 #close dialog
                 dialog.close()
@@ -188,8 +191,7 @@ def SlideButton():
             if clicked_button_id == 20003:
                 xbmc.executebuiltin('ActivateWindow(1154)')
             # 20004
-            if clicked_button_id == 20004:
-                xbmc.executebuiltin('ActivateWindow(1151)')
+            
 
             
 
@@ -238,15 +240,16 @@ if xbmcgui.getCurrentWindowId() == 11151:
 
     # if clicked button id == 20006 go to movies
     elif clicked_button_id == '20007':
-# Define the value for the {trakt} placeholder
-         trakt_id = 120
-         mediatype = 'movie'
+# # Define the value for the {trakt} placeholder
+#          trakt_id = 120
+#          mediatype = 'movie'
 
-# Construct the URL with the placeholder replaced
-         url = "plugin://plugin.video.seren/?action=getSources&source_select=true&action_args=%7B%22mediatype%22%3A%20%22{mediatype}%22%2C%20%22trakt_id%22%3A%20{trakt_id}%7D".format(
-    mediatype=mediatype,
-    trakt_id=trakt_id)        
-         xbmc.executebuiltin('PlayMedia({})'.format(url))
+# # Construct the URL with the placeholder replaced
+#          url = "plugin://plugin.video.seren/?action=getSources&source_select=true&action_args=%7B%22mediatype%22%3A%20%22{mediatype}%22%2C%20%22trakt_id%22%3A%20{trakt_id}%7D".format(
+#     mediatype=mediatype,
+#     trakt_id=trakt_id)        
+#          xbmc.executebuiltin('PlayMedia({})'.format(url))
+        xbmc.executebuiltin('ActivateWindow(videos,plugin://plugin.video.seren?action=moviesHome)')
 
 # def RotateButton():
 #     # Get the window
@@ -316,4 +319,3 @@ def fill_list():
 
 # if window id is 10000
 
-# fill_list()
