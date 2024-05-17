@@ -3,8 +3,75 @@
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
-				<include>ColoredBackgroundImages4</include>
-				<include>multi_home</include>
+		<include>ColoredBackgroundImages4</include>
+		<control type="group">
+			<centerleft>60%</centerleft>
+			<width>1600</width>
+			<top>20%</top>
+			<bottom>0</bottom>
+		    <!-- button -->
+				<control type="button" id="20014">
+	
+		<font>font36_title</font>
+		<align>center</align>
+		<left>5%</left>
+		<top>20%</top>
+		<width>600</width>
+		<height>500</height>
+		<aligny>center</aligny>
+
+		<texturefocus colordiffuse="">special://skin/extras/backgrounds/cross_divider.png</texturefocus>
+		<texturenofocus colordiffuse="">special://skin/extras/backgrounds/cross_divider.png</texturenofocus>
+	
+	
+	</control>
+			<control type="panel" id="9000">
+				<left>0</left>
+				<width>100%</width>
+				<top>120</top>
+				<height>300</height>
+				<onup>noop</onup>
+				<ondown>Control.SetFocus(9001,$INFO[Container(9000).Position],absolute)</ondown>
+				<include>mutli_media</include>
+				<content>
+					<item id="20012">
+						<label>$LOCALIZE[10003]</label>
+						<onclick>ActivateWindow(10001,"plugin://plugin.program.autowidget?group=lkkl-1713009424.9322183&amp;mode=path&amp;path_id=radio-1713016088.482167")</onclick>
+						<icon>special://skin/extras/backgrounds/music.png</icon>
+						<property name="clicked_button_id">20012</property>
+					</item>
+					<item>
+						<label>$LOCALIZE[24001]</label>
+						<onclick>ActivateWindow(Videos)</onclick>
+						<icon>special://skin/extras/backgrounds/videos.png</icon>
+					</item>
+					
+				</content>
+			</control>
+			<control type="panel" id="9001">
+				<left>0</left>
+				<right>0</right>
+				<top>470</top>
+				<bottom>0</bottom>
+				<onup>Control.SetFocus(9000,$INFO[Container(9001).Position],absolute)</onup>
+				<ondown>noop</ondown>
+				<include>mutli_media</include>
+				<content>
+					<item>
+						<label>$LOCALIZE[14200]</label>
+						<onclick>ActivateWindow(10001,"plugin://plugin.program.autowidget?group=tubes-1658512170.9405496&amp;mode=group")</onclick>
+						<icon>special://skin/extras/backgrounds/apps.png</icon>
+					</item>
+					<item>
+						<label>$LOCALIZE[14211]</label>
+						<onclick>ActivateWindow(Pictures)</onclick>
+						<icon>special://skin/extras/backgrounds/photos.png</icon>
+					</item>
+					
+					
+				</content>
+			</control>
+		</control>
 
 	</controls>
 </window>

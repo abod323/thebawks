@@ -43,11 +43,15 @@
 		<texturenofocus colordiffuse="">special://skin/extras/backgrounds/music.png</texturenofocus>
 		<onclick>RunScript(script.thebawks)</onclick>
 		<onfocus>SetProperty(clicked_button_id, 20012)</onfocus>
+		   <onup>2</onup>
+      <ondown>3</ondown>
+      <onleft>1</onleft>
+      <onright>1</onright>
 	
 	</control>
       
 	<!-- SECOND BUTTON RIGHT -->
-	<control type="button" id="20006">
+	<control type="button" id="20013">
 	
 		<font>font36_title</font>
 		<align>center</align>
@@ -59,10 +63,14 @@
 
 		<texturefocus colordiffuse="FFdea52b">special://skin/extras/backgrounds/videos.png</texturefocus>
 		<texturenofocus colordiffuse="">special://skin/extras/backgrounds/videos.png</texturenofocus>
-		<onclick>RunScript(script.thebawks)</onclick>
-
+		<onclick>ActivateWindow(videos)</onclick>
+		<onfocus>SetProperty(clicked_button_id, 20013)</onfocus>
+		   <onup>2</onup>
+      <ondown>3</ondown>
+      <onleft>1</onleft>
+      <onright>1</onright>
 	</control>
-		<control type="button" id="20006">
+		<control type="button" id="20014">
 	
 		<font>font36_title</font>
 		<align>center</align>
@@ -75,9 +83,10 @@
 		<texturefocus colordiffuse="FFdea52b">special://skin/extras/backgrounds/apps.png</texturefocus>
 		<texturenofocus colordiffuse="">special://skin/extras/backgrounds/apps.png</texturenofocus>
 		<onclick>RunScript(script.thebawks)</onclick>
+		<onfocus>SetProperty(clicked_button_id, 20014)</onfocus>
 	
 	</control>
-		<control type="button" id="20006">
+		<control type="button" id="20015">
 	
 		<font>font36_title</font>
 		<align>center</align>
@@ -89,7 +98,8 @@
 
 		<texturefocus colordiffuse="FFdea52b">special://skin/extras/backgrounds/photos.png</texturefocus>
 		<texturenofocus colordiffuse="">special://skin/extras/backgrounds/photos.png</texturenofocus>
-		<onclick>RunScript(script.thebawks)</onclick>
+		<onclick>ActivateWindow(pictures)</onclick>
+	    <onfocus>SetProperty(clicked_button_id, 20015)</onfocus>
 	</control>
 	
 

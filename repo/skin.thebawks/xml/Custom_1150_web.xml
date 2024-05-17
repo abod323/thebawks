@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id=1155>
+	<defaultcontrol>9000</defaultcontrol>
+	<backgroundcolor>background</backgroundcolor>
+	<controls>
+				<include>ColoredBackgroundImages5</include>
+				<control type="group">
+			<centerleft>50%</centerleft>
+			<width>1600</width>
+			<top>30%</top>
+			<bottom>0</bottom>
+		
+			<control type="panel" id="9000">
+				<left>0</left>
+				<width>100%</width>
+				<top>120</top>
+				<height>300</height>
+				<onup>noop</onup>
+				<ondown>Control.SetFocus(9001,$INFO[Container(9000).Position],absolute)</ondown>
+				<include>web_home</include>
+				<content>
+					<item id="20012">
+						<label>$LOCALIZE[10003]</label>
+						<!-- <onclick>ActivateWindow(videos,plugin://plugin.video.seren?action=showsHome)</onclick> -->
+						<icon>special://skin/extras/backgrounds/Web-Globe.png</icon>
+						<property name="clicked_button_id">20012</property>
+					</item>
+					<item>
+						<label>$LOCALIZE[24001]</label>
+						<!-- <onclick>ActivateWindow(videos,plugin://plugin.video.tb)</onclick> -->
+						<icon>special://skin/extras/backgrounds/mail.png</icon>
+					</item>
+					<item>
+						<label>$LOCALIZE[24001]</label>
+						<!-- <onclick>ActivateWindow(videos,plugin://plugin.video.seren?action=moviesHome)</onclick> -->
+						<icon>special://skin/extras/backgrounds/chat.png</icon>
+					</item>
+					
+				</content>
+			</control>
+		
+		</control>
+
+
+	</controls>
+</window>

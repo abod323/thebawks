@@ -191,6 +191,8 @@ def SlideButton():
             if clicked_button_id == 20003:
                 xbmc.executebuiltin('ActivateWindow(1154)')
             # 20004
+            if clicked_button_id == 20004:
+                xbmc.executebuiltin('ActivateWindow(1155)')
             
 
             
@@ -205,51 +207,51 @@ def SlideButton():
 if xbmcgui.getCurrentWindowId() == 10000: 
    SlideButton()
 
-# if window id is 11154
-if xbmcgui.getCurrentWindowId() == 11154:
-    # Get the window
-    window = xbmcgui.Window(xbmcgui.getCurrentWindowId())
+# # if window id is 11154
+# if xbmcgui.getCurrentWindowId() == 11154:
+#     # Get the window
+#     window = xbmcgui.Window(xbmcgui.getCurrentWindowId())
     
-    # Get the clicked button id
-    clicked_button_id = window.getProperty('clicked_button_id')
+#     # Get the clicked button id
+#     clicked_button_id = window.getProperty('clicked_button_id')
     
-    # if clicked button id == 20005 go home
-    if clicked_button_id == '20012':
-        xbmc.executebuiltin('ActivateWindow(10001,plugin://plugin.program.autowidget?group=lkkl-1713009424.9322183&mode=path&path_id=radio-1713016088.482167)')
+#     # if clicked button id == 20005 go home
+#     if clicked_button_id == '20012':
+#         xbmc.executebuiltin('ActivateWindow(10001,plugin://plugin.program.autowidget?group=lkkl-1713009424.9322183&mode=path&path_id=radio-1713016088.482167)')
 
-    if clicked_button_id == '20006':
-        xbmc.executebuiltin('ActivateWindow(10001,plugin://plugin.program.autowidget?group=lkkl-1713009424.9322183&mode=path&path_id=radio-1713016088.482167)')
+#     if clicked_button_id == '20014':
+#         xbmc.executebuiltin('ActivateWindow(10001,plugin://plugin.program.autowidget?group=tubes-1658512170.9405496&mode=group)')
 
 
 
 
 # if button is clicked 
-if xbmcgui.getCurrentWindowId() == 11151:
-    # Get the window
-    window = xbmcgui.Window(xbmcgui.getCurrentWindowId())
+# if xbmcgui.getCurrentWindowId() == 11151:
+#     # Get the window
+#     window = xbmcgui.Window(xbmcgui.getCurrentWindowId())
     
-    # Get the clicked button id
-    clicked_button_id = window.getProperty('clicked_button_id')
+#     # Get the clicked button id
+#     clicked_button_id = window.getProperty('clicked_button_id')
     
-    # if clicked button id == 20005 go home
-    if clicked_button_id == '20005':
-        xbmc.executebuiltin('ActivateWindow(videos,plugin://plugin.video.seren?action=showsHome)')
+#     # if clicked button id == 20005 go home
+#     if clicked_button_id == '20005':
+#         xbmc.executebuiltin('ActivateWindow(videos,plugin://plugin.video.seren?action=showsHome)')
 
-    if clicked_button_id == '20006':
-        xbmc.executebuiltin('ActivateWindow(videos,plugin://plugin.video.tb)')
+#     if clicked_button_id == '20006':
+#         xbmc.executebuiltin('ActivateWindow(videos,plugin://plugin.video.tb)')
 
-    # if clicked button id == 20006 go to movies
-    elif clicked_button_id == '20007':
-# # Define the value for the {trakt} placeholder
-#          trakt_id = 120
-#          mediatype = 'movie'
+#     # if clicked button id == 20006 go to movies
+#     elif clicked_button_id == '20007':
+# # # Define the value for the {trakt} placeholder
+# #          trakt_id = 120
+# #          mediatype = 'movie'
 
-# # Construct the URL with the placeholder replaced
-#          url = "plugin://plugin.video.seren/?action=getSources&source_select=true&action_args=%7B%22mediatype%22%3A%20%22{mediatype}%22%2C%20%22trakt_id%22%3A%20{trakt_id}%7D".format(
-#     mediatype=mediatype,
-#     trakt_id=trakt_id)        
-#          xbmc.executebuiltin('PlayMedia({})'.format(url))
-        xbmc.executebuiltin('ActivateWindow(videos,plugin://plugin.video.seren?action=moviesHome)')
+# # # Construct the URL with the placeholder replaced
+# #          url = "plugin://plugin.video.seren/?action=getSources&source_select=true&action_args=%7B%22mediatype%22%3A%20%22{mediatype}%22%2C%20%22trakt_id%22%3A%20{trakt_id}%7D".format(
+# #     mediatype=mediatype,
+# #     trakt_id=trakt_id)        
+# #          xbmc.executebuiltin('PlayMedia({})'.format(url))
+#         xbmc.executebuiltin('ActivateWindow(videos,plugin://plugin.video.seren?action=moviesHome)')
 
 # def RotateButton():
 #     # Get the window
@@ -281,41 +283,8 @@ if xbmcgui.getCurrentWindowId() == 11151:
 #         # Delay for smooth animation (adjust as needed)
 #         xbmc.sleep(10)
 
-# listitem 
-def listitem( label,label2,icon,url):
-    # Create a list item
-    list_item = xbmcgui.ListItem()
-
-    # Set the label for the list item
-    list_item.setLabel(label)
-
-    # Set the label2 for the list item
-    list_item.setLabel2(label2)
-
-    # Set the icon for the list item
-    list_item.setArt({'icon': icon})
-    
-    # Set the URL for the list item
-    list_item.setPath(url)
-    # Return the list item
-    return list_item
-
-# fill list
-def fill_list():
-    # Get window
-    window = xbmcgui.Window(xbmcgui.getCurrentWindowId())
-
-    # Get the list control
-    list = window.getControl(10000)
-
-    # Add list items
-    list.addItem(listitem('Movies', 'Watch movies online', 'DefaultMovies.png', 'plugin://plugin.video.seren?action=moviesHome'))
-    list.addItem(listitem('TV Shows', 'Watch TV shows online', 'DefaultTVShows.png', 'plugin://plugin.video.seren?action=showsHome'))
-    list.addItem(listitem('Search', 'Search for movies and TV shows', 'DefaultSearch.png', 'plugin://plugin.video.seren?action=search'))
-    list.addItem(listitem('My Movies', 'View your movie collection', 'DefaultMyMovies.png', 'plugin://plugin.video.seren?action=myMovies'))
-    list.addItem(listitem('My TV Shows', 'View your TV show collection', 'DefaultMyTVShows.png', 'plugin://plugin.video.seren?action=myShows'))
-    list.addItem(listitem('Settings', 'Configure Seren settings', 'DefaultAddonSettings.png', 'plugin://plugin.video.seren?action=settings'))
 
 
 # if window id is 10000
+
 
