@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<addons><addon id="my.skin.thebawks" name="TheBawks" version="1.1.2" provider-name="SabtDev">
+<addons><addon id="my.skin.thebawks" name="TheBawks" version="1.1.1" provider-name="SabtDev">
     <extension point="xbmc.addon.repository" name="Example Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/abod323/thebawks/master/repo/zips/addons.xml</info>
