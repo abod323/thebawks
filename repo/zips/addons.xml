@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<addons><addon id="my.skin.thebawks" name="TheBawks" version="1.1.2" provider-name="SabtDev">
+<addons><addon id="my.skin.thebawks" name="TheBawks" version="1.1.3" provider-name="SabtDev">
     <extension point="xbmc.addon.repository" name="Example Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/abod323/thebawks/master/repo/zips/addons.xml</info>
@@ -17,7 +17,7 @@
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
-</addon><addon id="plugin.video.tb" version="1.0.8" name="[COLOR cyan]TB[/COLOR]" provider-name="IDK">
+</addon><addon id="plugin.video.tb" version="1.0.9" name="[COLOR cyan]TB[/COLOR]" provider-name="IDK">
   <requires>
     <import addon="script.module.requests" version="2.18.4" />
     <import addon="script.module.beautifulsoup4" version="4.5.0" />
