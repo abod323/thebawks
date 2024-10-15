@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="31000"> <!-- Main -->
+        <setting label="31001" type="action" action="RunPlugin(plugin://plugin.video.tb/ISS)"/>
+    </category>
+    <category label="35000"> <!-- Playlist -->
+        <setting label="35002" type="bool" id="USEnabled" default="true"/>
+        <setting label="35003" type="bool" id="UKEnabled" default="false"/>
+    </category>
+</settings>

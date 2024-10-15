@@ -1,0 +1,24 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: en\n"
+
+msgctxt "#31000"
+msgid "Main"
+msgstr "Main"
+
+msgctxt "#31001"
+msgid "Setup IPTV Simple"
+msgstr "Setup IPTV Simple"
+
+msgctxt "#35000"
+msgid "Playlist"
+msgstr "Playlist"
+
+msgctxt "#35002"
+msgid "US"
+msgstr "US"
+
+msgctxt "#35003"
+msgid "UK"
+msgstr "UK"
